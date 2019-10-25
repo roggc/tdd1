@@ -1,7 +1,21 @@
 import React from 'react'
 import {Div} from './styled'
+import Modal from '../modal/index'
 
 export default
-()=>
-<Div data-testid='menu'>
-</Div>
+({state,dispatch})=>
+{
+  const showModal=
+  e=>
+  dispatch({type:'MENU_TOGGLE_MODAL'})
+  const el=
+  <Div data-testid='menu'>
+    <button onClick={showModal}>click</button>
+    {
+      state.menu.showModal?
+      <Modal/>:
+      <div>hola</div>
+    }
+  </Div>
+  return el
+}
