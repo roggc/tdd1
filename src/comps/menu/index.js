@@ -5,15 +5,15 @@ import Modal from '../modal/index'
 export default
 ({state,dispatch})=>
 {
-  const showModal=
+  const toggleModal=
   e=>
   dispatch({type:'MENU_TOGGLE_MODAL'})
   const el=
   <Div data-testid='menu'>
-    <button onClick={showModal}>click</button>
+    <button onClick={toggleModal}>click</button>
     {
       state.menu.showModal?
-      <Modal/>:
+      <Modal state={state} dispatch={dispatch}/>:
       ''
     }
   </Div>

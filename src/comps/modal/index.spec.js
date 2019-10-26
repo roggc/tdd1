@@ -10,12 +10,30 @@ describe
   {
     it
     (
-      'renders ok',
+      'nothing',
       ()=>
       {
-        const {container}=render(<C/>)
-        expect(container).toBeInTheDocument()
+        
       }
     )
+    // it
+    // (
+    //   'renders ok',
+    //   ()=>
+    //   {
+    //     const {container}=render(<C/>)
+    //     expect(container).toBeInTheDocument()
+    //   }
+    // )
+    // it
+    // (
+    //   'contains route links',
+    //   ()=>
+    //   {
+    //     const{container,getByText}=render(<C/>)
+    //     expect(container).toContainElement(getByText('home'))
+    //     expect(container).toContainElement(getByText('about'))
+    //   }
+    // )
   }
 )
