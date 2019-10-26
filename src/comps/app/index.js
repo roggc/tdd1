@@ -11,7 +11,7 @@ export default
 {
   const [state1,dispatch1]=useReducer(reducer,initialState)
   const el=
-  <Div>
+  <Div data-testid='app'>
     <Header state={state1} dispatch={dispatch1}/>
     <Content/>
     <Footer/>

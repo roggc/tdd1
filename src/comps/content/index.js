@@ -4,4 +4,5 @@ import {Div} from './styled'
 export default
 ()=>
 <Div data-testid='content'>
+o
 </Div>

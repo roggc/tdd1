@@ -3,5 +3,5 @@ import {Div} from './styled'
 
 export default
 ()=>
-<Div data-testid='modal'>
+<Div data-testid='modal'>o
 </Div>

@@ -14,7 +14,7 @@ export default
     {
       state.menu.showModal?
       <Modal/>:
-      <div>hola</div>
+      ''
     }
   </Div>
   return el
