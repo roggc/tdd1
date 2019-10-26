@@ -10,7 +10,7 @@ export default
   dispatch({type:'MENU_TOGGLE_MODAL'})
   const el=
   <Div data-testid='menu'>
-    <button onClick={toggleModal}>click</button>
+    <button onClick={toggleModal}>menu</button>
     {
       state.menu.showModal?
       <Modal state={state} dispatch={dispatch}/>:
